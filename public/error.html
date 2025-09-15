@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erreur - Application Météo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- En-tête -->
+        <header class="header">
+            <h1><i class="fas fa-cloud-sun"></i> Météo Pro</h1>
+            <p>Prévisions météorologiques précises et détaillées</p>
+        </header>
+
+        <!-- Carte d'erreur -->
+        <div class="error-card">
+            <div class="error-header">
+                <div class="error-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                
+                <div class="error-title">
+                    Ville introuvable
+                </div>
+                
+                <div class="error-description">
+                    Impossible de récupérer les données météo
+                </div>
+            </div>
+            
+            <div class="error-details">
+                <div class="detail-card">
+                    <div class="detail-value">
+                        La ville recherchée n'a pas été trouvée dans notre base de données météorologique. (Vérifiez l'orthographe) 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="divActions">
+            <a href="/" class="btn">
+                <i class="fas fa-home"></i> Retour à l'accueil
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

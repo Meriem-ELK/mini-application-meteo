@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Météo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="main-container">
+        <!-- En-tête -->
+        <header class="header">
+            <h1><i class="fas fa-cloud-sun"></i> Météo Pro</h1>
+            <p>Prévisions météorologiques précises et détaillées</p>
+        </header>
+
+        <!-- Section de recherche -->
+        <div class="search-card">
+            <form class="search-form">
+                <input 
+                    type="text" 
+                    id="villeInput" 
+                    class="search-input" 
+                    placeholder="Rechercher une ville..."
+                    autocomplete="off"
+                >
+                <button type="button" id="recherrcheBtn" class="search-btn">
+                    <i class="fas fa-search"></i>
+                    <span class="d-none d-sm-inline ms-2">Rechercher</span>
+                </button>
+            </form>
+        </div>
+
+        <!-- Afficher la météo -->
+        <div id="affichageMeteo"></div>
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
